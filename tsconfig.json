@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",               // or ES2020+
+    "module": "CommonJS",
+    "lib": ["ES2022", "DOM"],         // include at least ES2020+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strict": true,                   // helps catch issues early
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "typeRoots": ["./node_modules/@types", "./src/types"], // Add ./src/types
+    
+  },
+  "include": ["src/**/*", "test/**/*"] // Ensure this covers your .d.ts files
+}
